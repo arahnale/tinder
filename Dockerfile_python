@@ -1,0 +1,4 @@
+FROM python:3.10-alpine3.15
+
+RUN apk add gcc musl-dev g++ build-base linux-headers && \
+    pip install clickhouse-driver mysql-connector-python requests mechanize opentelemetry-sdk opentelemetry-api opentelemetry-exporter-jaeger
